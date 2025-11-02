@@ -1,271 +1,271 @@
 {
   "single import": {
-    "prefix": "go-im",
+    "prefix": "im",
     "body": "import \"${1:package}\"",
     "description": "Snippet for import statement"
   },
   "multiple imports": {
-    "prefix": "go-ims",
+    "prefix": "ims",
     "body": "import (\n\t\"${1:package}\"\n)",
     "description": "Snippet for a import block"
   },
   "single constant": {
-    "prefix": "go-co",
+    "prefix": "co",
     "body": "const ${1:name} = ${2:value}",
     "description": "Snippet for a constant"
   },
   "multiple constants": {
-    "prefix": "go-cos",
+    "prefix": "cos",
     "body": "const (\n\t${1:name} = ${2:value}\n)",
     "description": "Snippet for a constant block"
   },
   "type function declaration": {
-    "prefix": "go-tyf",
+    "prefix": "tyf",
     "body": "type ${1:name} func($3) $4",
     "description": "Snippet for a type function declaration"
   },
   "type interface declaration": {
-    "prefix": "go-tyi",
+    "prefix": "tyi",
     "body": "type ${1:name} interface {\n\t$0\n}",
     "description": "Snippet for a type interface"
   },
   "type struct declaration": {
-    "prefix": "go-tys",
+    "prefix": "tys",
     "body": "type ${1:name} struct {\n\t$0\n}",
     "description": "Snippet for a struct declaration"
   },
   "package main and main function": {
-    "prefix": "go-pkgm",
+    "prefix": "pkgm",
     "body": "package main\n\nfunc main() {\n\t$0\n}",
     "description": "Snippet for main package & function"
   },
   "function declaration": {
-    "prefix": "go-func",
+    "prefix": "func",
     "body": "func $1($2) $3 {\n\t$0\n}",
     "description": "Snippet for function declaration"
   },
   "single variable": {
-    "prefix": "go-var",
+    "prefix": "var",
     "body": "var ${1:name} ${2:type}",
     "description": "Snippet for a variable"
   },
   "multiple variables": {
-    "prefix": "go-vars",
+    "prefix": "vars",
     "body": "var (\n\t${1:name} ${2:type}\n)",
     "description": "Snippet for variable block"
   },
   "switch statement": {
-    "prefix": "go-switch",
+    "prefix": "switch",
     "body": "switch ${1:expression} {\ncase ${2:condition}:\n\t$0\n}",
     "description": "Snippet for switch statement"
   },
   "select statement": {
-    "prefix": "go-sel",
+    "prefix": "sel",
     "body": "select {\ncase ${1:condition}:\n\t$0\n}",
     "description": "Snippet for select statement"
   },
   "case clause": {
-    "prefix": "go-cs",
+    "prefix": "cs",
     "body": "case ${1:condition}:$0",
     "description": "Snippet for case clause"
   },
   "for statement": {
-    "prefix": "go-for",
+    "prefix": "for",
     "body": "for ${1:i} := ${2:0}; $1 < ${3:count}; $1${4:++} {\n\t$0\n}",
     "description": "Snippet for a for loop"
   },
   "for range statement": {
-    "prefix": "go-forr",
+    "prefix": "forr",
     "body": "for ${1:_}, ${2:v} := range ${3:v} {\n\t$0\n}",
     "description": "Snippet for a for range loop"
   },
   "channel declaration": {
-    "prefix": "go-ch",
+    "prefix": "ch",
     "body": "chan ${1:type}",
     "description": "Snippet for a channel"
   },
   "map declaration": {
-    "prefix": "go-map",
+    "prefix": "map",
     "body": "map[${1:type}]${2:type}",
     "description": "Snippet for a map"
   },
   "empty interface": {
-    "prefix": "go-in",
+    "prefix": "in",
     "body": "interface{}",
     "description": "Snippet for empty interface"
   },
   "if statement": {
-    "prefix": "go-if",
+    "prefix": "if",
     "body": "if ${1:condition} {\n\t$0\n}",
     "description": "Snippet for if statement"
   },
   "else branch": {
-    "prefix": "go-el",
+    "prefix": "el",
     "body": "else {\n\t$0\n}",
     "description": "Snippet for else branch"
   },
   "if else statement": {
-    "prefix": "go-ie",
+    "prefix": "ie",
     "body": "if ${1:condition} {\n\t$2\n} else {\n\t$0\n}",
     "description": "Snippet for if else"
   },
   "if err != nil": {
-    "prefix": "go-iferr",
+    "prefix": "iferr",
     "body": "if err != nil {\n\t${1:return ${2:nil, }${3:err}}\n}",
     "description": "Snippet for if err != nil"
   },
   "fmt.Println": {
-    "prefix": "go-fp",
+    "prefix": "fp",
     "body": "fmt.Println(\"$1\")",
     "description": "Snippet for fmt.Println()"
   },
   "fmt.Printf": {
-    "prefix": "go-ff",
+    "prefix": "ff",
     "body": "fmt.Printf(\"$1\", ${2:var})",
     "description": "Snippet for fmt.Printf()"
   },
   "log.Println": {
-    "prefix": "go-lp",
+    "prefix": "lp",
     "body": "log.Println(\"$1\")",
     "description": "Snippet for log.Println()"
   },
   "log.Printf": {
-    "prefix": "go-lf",
+    "prefix": "lf",
     "body": "log.Printf(\"$1\", ${2:var})",
     "description": "Snippet for log.Printf()"
   },
   "log variable content": {
-    "prefix": "go-lv",
+    "prefix": "lv",
     "body": "log.Printf(\"${1:var}: %#+v\\\\n\", ${1:var})",
     "description": "Snippet for log.Printf() with variable content"
   },
   "t.Log": {
-    "prefix": "go-tl",
+    "prefix": "tl",
     "body": "t.Log(\"$1\")",
     "description": "Snippet for t.Log()"
   },
   "t.Logf": {
-    "prefix": "go-tlf",
+    "prefix": "tlf",
     "body": "t.Logf(\"$1\", ${2:var})",
     "description": "Snippet for t.Logf()"
   },
   "t.Logf variable content": {
-    "prefix": "go-tlv",
+    "prefix": "tlv",
     "body": "t.Logf(\"${1:var}: %#+v\\\\n\", ${1:var})",
     "description": "Snippet for t.Logf() with variable content"
   },
   "make(...)": {
-    "prefix": "go-make",
+    "prefix": "make",
     "body": "make(${1:type}, ${2:0})",
     "description": "Snippet for make statement"
   },
   "new(...)": {
-    "prefix": "go-new",
+    "prefix": "new",
     "body": "new(${1:type})",
     "description": "Snippet for new statement"
   },
   "panic(...)": {
-    "prefix": "go-pn",
+    "prefix": "pn",
     "body": "panic(\"$0\")",
     "description": "Snippet for panic"
   },
   "http ResponseWriter *Request": {
-    "prefix": "go-wr",
+    "prefix": "wr",
     "body": "${1:w} http.ResponseWriter, ${2:r} *http.Request",
     "description": "Snippet for http Response"
   },
   "http.HandleFunc": {
-    "prefix": "go-hf",
+    "prefix": "hf",
     "body": "${1:http}.HandleFunc(\"${2:/}\", ${3:handler})",
     "description": "Snippet for http.HandleFunc()"
   },
   "http handler declaration": {
-    "prefix": "go-hand",
+    "prefix": "hand",
     "body": "func $1(${2:w} http.ResponseWriter, ${3:r} *http.Request) {\n\t$0\n}",
     "description": "Snippet for http handler declaration"
   },
   "http.Redirect": {
-    "prefix": "go-rd",
+    "prefix": "rd",
     "body": "http.Redirect(${1:w}, ${2:r}, \"${3:/}\", ${4:http.StatusFound})",
     "description": "Snippet for http.Redirect()"
   },
   "http.Error": {
-    "prefix": "go-herr",
+    "prefix": "herr",
     "body": "http.Error(${1:w}, ${2:err}.Error(), ${3:http.StatusInternalServerError})",
     "description": "Snippet for http.Error()"
   },
   "http.ListenAndServe": {
-    "prefix": "go-las",
+    "prefix": "las",
     "body": "http.ListenAndServe(\"${1::8080}\", ${2:nil})",
     "description": "Snippet for http.ListenAndServe"
   },
   "http.Serve": {
-    "prefix": "go-sv",
+    "prefix": "sv",
     "body": "http.Serve(\"${1::8080}\", ${2:nil})",
     "description": "Snippet for http.Serve"
   },
   "goroutine anonymous function": {
-    "prefix": "go-go",
+    "prefix": "go",
     "body": "go func($1) {\n\t$0\n}($2)",
     "description": "Snippet for anonymous goroutine declaration"
   },
   "goroutine function": {
-    "prefix": "go-gf",
+    "prefix": "gf",
     "body": "go ${1:func}($0)",
     "description": "Snippet for goroutine declaration"
   },
   "defer statement": {
-    "prefix": "go-df",
+    "prefix": "df",
     "body": "defer ${1:func}($0)",
     "description": "Snippet for defer statement"
   },
   "test function": {
-    "prefix": "go-tf",
+    "prefix": "tf",
     "body": "func Test$1(t *testing.T) {\n\t$0\n}",
     "description": "Snippet for Test function"
   },
   "test main": {
-    "prefix": "go-tm",
+    "prefix": "tm",
     "body": "func TestMain(m *testing.M) {\n\t$1\n\n\tos.Exit(m.Run())\n}",
     "description": "Snippet for TestMain function"
   },
   "benchmark function": {
-    "prefix": "go-bf",
+    "prefix": "bf",
     "body": "func Benchmark$1(b *testing.B) {\n\tfor ${2:i} := 0; ${2:i} < b.N; ${2:i}++ {\n\t\t$0\n\t}\n}",
     "description": "Snippet for Benchmark function"
   },
   "example function": {
-    "prefix": "go-ef",
+    "prefix": "ef",
     "body": "func Example$1() {\n\t$2\n\t//Output:\n\t$3\n}",
     "description": "Snippet for Example function"
   },
   "table driven test": {
-    "prefix": "go-tdt",
+    "prefix": "tdt",
     "body": "func Test$1(t *testing.T) {\n\ttestCases := []struct {\n\t\tdesc\tstring\n\t\t$2\n\t}{\n\t\t{\n\t\t\tdesc: \"$3\",\n\t\t\t$4\n\t\t},\n\t}\n\tfor _, tC := range testCases {\n\t\tt.Run(tC.desc, func(t *testing.T) {\n\t\t\t$0\n\t\t})\n\t}\n}",
     "description": "Snippet for table driven test"
   },
   "init function": {
-    "prefix": "go-finit",
+    "prefix": "finit",
     "body": "func init() {\n\t$1\n}",
     "description": "Snippet for init function"
   },
   "main function": {
-    "prefix": "go-fmain",
+    "prefix": "fmain",
     "body": "func main() {\n\t$1\n}",
     "description": "Snippet for main function"
   },
   "method declaration": {
-    "prefix": "go-meth",
+    "prefix": "meth",
     "body": "func (${1:receiver} ${2:type}) ${3:method}($4) $5 {\n\t$0\n}",
     "description": "Snippet for method declaration"
   },
   "hello world web app": {
-    "prefix": "go-helloweb",
+    "prefix": "helloweb",
     "body": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"time\"\n)\n\nfunc greet(w http.ResponseWriter, r *http.Request) {\n\tfmt.Fprintf(w, \"Hello World! %s\", time.Now())\n}\n\nfunc main() {\n\thttp.HandleFunc(\"/\", greet)\n\thttp.ListenAndServe(\":8080\", nil)\n}",
     "description": "Snippet for sample hello world webapp"
   },
   "sort implementation": {
-    "prefix": "go-sort",
+    "prefix": "sort",
     "body": "type ${1:SortBy} []${2:Type}\n\nfunc (a $1) Len() int           { return len(a) }\nfunc (a $1) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }\nfunc (a $1) Less(i, j int) bool { ${3:return a[i] < a[j]} }",
     "description": "Snippet for a custom sort.Sort interface implementation, for a given slice type."
   }
